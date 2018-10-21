@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="eng-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TriviaGame</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+</head>
+
+<body id="background">
+    <!---->
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <header>
+                            <h1 class="header">Useless Trivia, Trivia Game</h1>
+                        </header>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div id="timer" class="col-md-12">
+                        <p></p>
+                        <p id="time-display" class="time-remaining"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="quiz" class "col-md-12">
+                        <button id="start" type="button-center">Start</button>
+                        <div id="results"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="game-questions" class="container">
+        <div class="quiz">
+            <div id="q1">
+                <p>In what place was Christmas illegal at one time?</p>
+                <input id="brazil" type="radio" name="Christmas" value="0">Brazil&nbsp
+                <input id="england" type="radio" name="Christmas" value="1" data-correct>England&nbsp
+                <input id="russia" type="radio" name="Christmas" value="0">Russia&nbsp
+                <input id="france" type="radio" name="Christmas" value="0">France&nbsp
+            </div>
+           
+            <hr>
+            <div id="q2">
+                <p>In California, is it illegal to eat oranges doing what?</p>
+                <input type="radio" name="oranges" value="1" id="Bathing">Bathing&nbsp
+                
+                <input type="radio" name="oranges" value="0">Gardening&nbsp
+                <input type="radio" name="oranges" value="0">Driving&nbsp
+                <input type="radio" name="oranges" value="0">Working on a Computer&nbsp
+            </div>
+            <hr>
+            <div id="q3">
+                <p>Coulrophobia means fear of what?</p>
+                <input type="radio" name="clowns" value="1" data-correct>Clowns&nbsp
+                <input type="radio" name="clowns" value="0">Old People&nbsp
+                <input type="radio" name="clowns" value="0">Sacred Things&nbsp
+                <input type="radio" name="clowns" value="0">Clouds&nbsp
+            </div>
+            <hr>
+            <div id="q4">
+                <p>Which of the following is the longest running American animated TV show?</p>
+                <input type="radio" name="TV" value="0">Buggs Bunny&nbsp
+                <input type="radio" name="TV" value="0">Pokemon&nbsp
+                <input type="radio" name="TV" value="1" data-correct>The Simpsons&nbsp
+                <input type="radio" name="TV" value="0">Rugrats&nbsp
+            </div>
+            <hr>
+            <div id="q5">
+                <p>In what key do most American car-horns honk?</p>
+                <input type="radio" name="honk" value="0">A&nbsp
+                <input type="radio" name="honk" value="1" data-correct>F&nbsp
+                <input type="radio" name="honk" value="0">E&nbsp
+                <input type="radio" name="honk" value="0">B&nbsp
+            </div>
+            <hr>
+            <div id="q6">
+                <p>When glass breaks, the cracks move up to how many mph?</p>
+                <input type="radio" name="glass" value=0>5000&nbsp
+                <input type="radio" name="glass" value=1 data-correct>3000&nbsp
+                <input type="radio" name="glass" value=0>1000&nbsp
+                <input type="radio" name="glass" value=0>8000&nbsp
+            </div>
+            <hr>
+        </div>
+
+    </div>
+    <div id="end">
+        <h2>Here are your results</h2>
+        <hr>
+        <h2 id="correctCount">Correct Answers: 0</h2>
+        <h2 id="incorrectCount">Wrong Answers: 0</h2>
+    </div>
+    <script src="assets/javascript/app.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+</body>
+
+</html>
